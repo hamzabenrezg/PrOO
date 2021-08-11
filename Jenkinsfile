@@ -22,7 +22,7 @@ java -version'''
 
     stage('Build with Maven') {
       steps {
-        sh 'mvn compile test package'
+        sh 'mvn clean install -DskipTests'
       }
     }
 
